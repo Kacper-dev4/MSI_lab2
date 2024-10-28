@@ -1,5 +1,4 @@
 clear all
-close all
 clc
 
 wz28 = load('mnist_012.mat');
@@ -93,35 +92,14 @@ wz66 = [-1, -1,  1,  1, -1, -1;
            -1, -1,  1,  1, -1, -1;
            -1, -1,  1,  1, -1, -1];
 
-figure
-imshow([wz41,wz42,wz43,wz44,wz45,wz46])
 
-figure
-imshow([wz61,wz62,wz63,wz64,wz65,wz66])
+wz281 = ;
+wz282 =;
+wz283 =;
+wz284 =;
+wz285 = ;
+wz286 = ;
 
-wz281 = double(train28(:,:,123));
-wz282 = double(train28(:,:,5));
-wz283 = double(train28(:,:,56));
-wz284 = double(train28(:,:,2));
-wz285 = double(train28(:,:,32));
-wz286 = double(train28(:,:,176));
-
-wz281(wz281==0) = -1;
-wz282(wz282==0) = -1;
-wz283(wz283==0) = -1;
-wz284(wz284==0) = -1;
-wz285(wz285==0) = -1;
-wz286(wz286==0) = -1;
-
-figure
-imshow([wz281,wz282,wz283,wz284,wz285,wz286]);
-
-szum10 = imnoise(wz281,'salt & pepper',0.1);
-szum10(szum10==0) = -1;
-szum40 = imnoise(wz281,'salt & pepper',0.4);
-szum40(szum40==0) = -1;
-szum80 = imnoise(wz281,'salt & pepper',0.8);
-szum80(szum80==0) = -1;
 
 % Dla reguły HEbba
 
