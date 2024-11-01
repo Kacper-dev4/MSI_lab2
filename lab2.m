@@ -123,11 +123,11 @@ szum40(szum40==0) = -1;
 szum80 = imnoise(wz281,'salt & pepper',0.8);
 szum80(szum80==0) = -1;
 
-% Dla reguły HEbba
+% Dla reguły Hebba
 
 %%%%%%%    4x4  %%%%%%%%%%%%%%%%%%%%%
 
-[y41,y42,y43,k41,k42,k43,W41,W42,W43] = Hcos(bl41,10,wz41,wz42,wz43,wz44,wz45,wz46);
+[y41,y42,y43,k41,k42,k43,W41,W42,W43] = Hebb(bl41,10,wz41,wz42,wz43,wz44,wz45,wz46);
 
 %%%%%%%%%%5 6x6 %%%%%%%%%%%%%%%%%%%55
 
@@ -137,11 +137,11 @@ szum80(szum80==0) = -1;
 %%%%%%%%% 28x28 %%%%%%%%%%%%%%%%
 
 
-[~,~,yszum10,~,~,kszum10,~,~,Wszum10] = Hcos(szum10,10,wz281,wz282,wz283,wz284,wz285,wz286);
+[~,~,yszum10,~,~,kszum10,~,~,Wszum10] = Hcos(szum10,100,wz281,wz282,wz283,wz284,wz285,wz286);
 
-[~,~,yszum40,~,~,kszum40,~,~,Wszum40] = Hcos(szum40,10,wz281,wz282,wz283,wz284,wz285,wz286);
+[~,~,yszum40,~,~,kszum40,~,~,Wszum40] = Hcos(szum40,100,wz281,wz282,wz283,wz284,wz285,wz286);
 
-[~,~,yszum80,~,~,kszum80,~,~,Wszum80] = Hcos(szum80,10,wz281,wz282,wz283,wz284,wz285,wz286);
+[~,~,yszum80,~,~,kszum80,~,~,Wszum80] = Hcos(szum80,200,wz281,wz282,wz283,wz284,wz285,wz286);
 
 % Dla reguły pseudoinwersji
 
@@ -156,8 +156,8 @@ szum80(szum80==0) = -1;
 %%%%%%%%% 28x28 %%%%%%%%%%%%%%%%
 
 
-[~,~,yszumPI10,~,~,kszumPI10,~,~,WszumPI10] = PPPP(szum10,10,wz281,wz282,wz283,wz284,wz285,wz286);
+[~,~,yszumPI10,~,~,kszumPI10,~,~,WszumPI10] = PPPP(szum10,100,wz281,wz282,wz283,wz284,wz285,wz286);
 
-[~,~,yszumPI40,~,~,kszumPI40,~,~,WszumPI40] = PPPP(szum40,10,wz281,wz282,wz283,wz284,wz285,wz286);
+[~,~,yszumPI40,~,~,kszumPI40,~,~,WszumPI40] = PPPP(szum40,100,wz281,wz282,wz283,wz284,wz285,wz286);
 
-[~,~,yszumPI80,~,~,kszumPI80,~,~,WszumPI80] = PPPP(szum80,10,wz281,wz282,wz283,wz284,wz285,wz286);
+[~,~,yszumPI80,~,~,kszumPI80,~,~,WszumPI80] = PPPP(szum80,200,wz281,wz282,wz283,wz284,wz285,wz286);
