@@ -149,6 +149,13 @@ szum40(szum40==0) = -1;
 szum80 = imnoise(wz281,'salt & pepper',0.8);
 szum80(szum80==0) = -1;
 
+obrazySzum(:,:,1) = szum10; 
+obrazySzum(:,:,2) = szum40; 
+obrazySzum(:,:,3) = szum80;
+
+tekstSzum = [sprintf("Szum 10%%");sprintf("Szum 40%%");sprintf("Szum 80%%")];
+wyrysujTekst(obrazySzum,tekstSzum)
+
 % Dla reguły Hebba
 
 %%%%%%%    4x4  %%%%%%%%%%%%%%%%%%%%%

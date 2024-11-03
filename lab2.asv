@@ -162,7 +162,7 @@ k4(:,:,3) = k43;
 T4 = [sprintf("Dwa 2 wzorców");sprintf("Dla 4 wzorców");sprintf("Dla 6 wzorców")];
 
 wyrysujTekst(k4,T4);
-
+title('4x4 ')
 %%%%%%%%%%5 6x6 %%%%%%%%%%%%%%%%%%%55
 
 [y61,y62,y63,k61,k62,k63,W61,W62,W63] = Hcos(bl61,10,wz61,wz62,wz63,wz64,wz65,wz66);
@@ -183,6 +183,15 @@ wyrysujTekst(k6,T6);
 [~,~,yszum40,~,~,kszum40,~,~,Wszum40] = Hcos(szum40,100,wz281,wz282,wz283,wz284,wz285,wz286);
 
 [~,~,yszum80,~,~,kszum80,~,~,Wszum80] = Hcos(szum80,200,wz281,wz282,wz283,wz284,wz285,wz286);
+
+k28(:,:,1) = kszum10;
+k28(:,:,2) = kszum40;
+k28(:,:,3) = kszum80;
+
+T28 = [sprintf("Dwa szumu 10%%");sprintf("Dla szumu 40%%");sprintf("Dla szumu 80%%")];
+
+wyrysujTekst(k28,T28);
+
 
 % Dla reguły pseudoinwersji
 
@@ -206,9 +215,9 @@ kpi6(:,:,1) = kpi61;
 kpi6(:,:,2) = kpi62;
 kpi6(:,:,3) = kpi63;
 
-Tpi4 = [sprintf("Dwa 2 wzorców");sprintf("Dla 4 wzorców");sprintf("Dla 6 wzorców")];
+Tpi6 = [sprintf("Dwa 2 wzorców");sprintf("Dla 4 wzorców");sprintf("Dla 6 wzorców")];
 
-wyrysujTekst(kpi4,Tpi4);
+wyrysujTekst(kpi6,Tpi6);
 
 
 %%%%%%%%% 28x28 %%%%%%%%%%%%%%%%
@@ -219,3 +228,12 @@ wyrysujTekst(kpi4,Tpi4);
 [~,~,yszumPI40,~,~,kszumPI40,~,~,WszumPI40] = PPPP(szum40,100,wz281,wz282,wz283,wz284,wz285,wz286);
 
 [~,~,yszumPI80,~,~,kszumPI80,~,~,WszumPI80] = PPPP(szum80,200,wz281,wz282,wz283,wz284,wz285,wz286);
+
+kpi28(:,:,1) = kszum10;
+kpi28(:,:,2) = kszum40;
+kpi28(:,:,3) = kszum80;
+
+Tpi28 = [sprintf("Dwa szumu 10%%");sprintf("Dla szumu 40%%");sprintf("Dla szumu 80%%")];
+
+wyrysujTekst(kpi28,Tpi28);
+
