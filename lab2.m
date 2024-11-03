@@ -32,8 +32,8 @@ wz44 = [ 1, 1, 1, 1;
          1, 1, 1, 1];
 
 wz45 = [-1,-1,-1,-1;
-        1,1,1,1;
-        1,1,1,1;
+        1,1,-1,1;
+        1,-1,1,1;
         -1,-1,-1,-1;
                 ];
 
@@ -93,12 +93,29 @@ wz66 = [-1, -1,  1,  1, -1, -1;
            -1, -1,  1,  1, -1, -1;
            -1, -1,  1,  1, -1, -1];
 
-figure
-imshow([wz41,wz42,wz43,wz44,wz45,wz46])
+wz4(:,:,1) = wz41;
+wz4(:,:,2) = wz42;
+wz4(:,:,3) = wz43;
+wz4(:,:,4) = wz44;
+wz4(:,:,5) = wz45;
+wz4(:,:,6) = wz46;
+wyrysuj(wz4);
 
-figure
-imshow([wz61,wz62,wz63,wz64,wz65,wz66])
+wz6(:,:,1) = wz61;
+wz6(:,:,2) = wz62;
+wz6(:,:,3) = wz63;
+wz6(:,:,4) = wz64;
+wz6(:,:,5) = wz65;
+wz6(:,:,6) = wz66;
+wyrysuj(wz6);
 
+
+% figure
+% imshow([wz41,wz42,wz43,wz44,wz45,wz46],'InitialMagnification', 'fit')
+% 
+% figure
+% imshow([wz61,wz62,wz63,wz64,wz65,wz66],'InitialMagnification', 'fit')
+% 
 wz281 = double(train28(:,:,123));
 wz282 = double(train28(:,:,5));
 wz283 = double(train28(:,:,56));
@@ -112,9 +129,18 @@ wz283(wz283==0) = -1;
 wz284(wz284==0) = -1;
 wz285(wz285==0) = -1;
 wz286(wz286==0) = -1;
+% 
+% figure
+% imshow([wz281,wz282,wz283,wz284,wz285,wz286],'InitialMagnification', 'fit');
 
-figure
-imshow([wz281,wz282,wz283,wz284,wz285,wz286]);
+w28(:,:,1) = wz281;
+w28(:,:,2) = wz282;
+w28(:,:,3) = wz283;
+w28(:,:,4) = wz284;
+w28(:,:,5) = wz285;
+w28(:,:,6) = wz286;
+wyrysuj(w28);
+
 
 szum10 = imnoise(wz281,'salt & pepper',0.1);
 szum10(szum10==0) = -1;
