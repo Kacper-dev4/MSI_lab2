@@ -31,9 +31,9 @@ for t=1:ile
     y1(t+1,:) = sign(W1*y1(t,:)');
 end
 
-k2 = reshape(y1(ile+1,:),wymiar,wymiar);
-figure
-imshow(k2)
+ k2 = reshape(y1(ile+1,:),wymiar,wymiar);
+% figure
+%imshow(k2)
 
 %W2 = (1/n)*([D(:,1),D(:,2),D(:,3),D(:,4)] * [D(:,1)';D(:,2)';D(:,3)';D(:,4)']);
 
@@ -55,9 +55,9 @@ for t=1:ile
     y2(t+1,:) = sign(W2*y2(t,:)');
 end
 
-k4 = reshape(y2(ile+1,:),wymiar,wymiar);
-figure
-imshow(k4)
+ k4 = reshape(y2(ile+1,:),wymiar,wymiar);
+% figure
+%imshow(k4)
 
 %W3 = (1/n)*([D(:,1),D(:,2),D(:,3),D(:,4),D(:,5),D(:,6)] * [D(:,1)';D(:,2)';D(:,3)';D(:,4)';D(:,5)';D(:,6)']);
 
@@ -79,8 +79,8 @@ for t=1:ile
     y3(t+1,:) = sign(W3*y3(t,:)');
 end
 
-k6 = reshape(y3(ile+1,:),wymiar,wymiar);
-figure
-imshow(k6)
+ k6 = reshape(y3(ile+1,:),wymiar,wymiar);
+% figure
+%imshow(k6)
 end
 

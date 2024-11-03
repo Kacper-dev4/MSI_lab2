@@ -19,8 +19,8 @@ for t=1:ile
 end
 
 k2 = reshape(y1(ile+1,:),wymiar,wymiar);
-figure
-imshow(k2)
+% figure
+% imshow(k2)
 
 W2 = [P(:,1),P(:,2),P(:,3),P(:,4)]*pinv([P(:,1)';P(:,2)';P(:,3)';P(:,4)']*[P(:,1),P(:,2),P(:,4),P(:,4)])*[P(:,1)';P(:,2)';P(:,3)';P(:,4)'];
 
@@ -34,8 +34,8 @@ for t=1:ile
 end
 
 k4 = reshape(y2(ile+1,:),wymiar,wymiar);
-figure
-imshow(k4)
+% figure
+% imshow(k4)
 
 W3 = P * pinv(P' * P) * P';
 
@@ -49,8 +49,8 @@ for t=1:ile
 end
 
 k6 = reshape(y3(ile+1,:),wymiar,wymiar);
-figure
-imshow(k6)
+% figure
+% imshow(k6)
 end
 
 

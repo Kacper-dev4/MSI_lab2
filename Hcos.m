@@ -20,8 +20,8 @@ for t=1:ile
 end
 
 k2 = reshape(y1(ile+1,:),wymiar,wymiar);
-figure
-imshow(k2)
+% figure
+% imshow(k2)
 
 W2 = (1/n)*([D(:,1),D(:,2),D(:,3),D(:,4)] * [D(:,1)';D(:,2)';D(:,3)';D(:,4)']);
 
@@ -35,8 +35,8 @@ for t=1:ile
 end
 
 k4 = reshape(y2(ile+1,:),wymiar,wymiar);
-figure
-imshow(k4)
+% figure
+% imshow(k4)
 
 W3 = (1/n)*([D(:,1),D(:,2),D(:,3),D(:,4),D(:,5),D(:,6)] * [D(:,1)';D(:,2)';D(:,3)';D(:,4)';D(:,5)';D(:,6)']);
 
@@ -50,7 +50,7 @@ for t=1:ile
 end
 
 k6 = reshape(y3(ile+1,:),wymiar,wymiar);
-figure
-imshow(k6)
+% figure
+% imshow(k6)
 end
 

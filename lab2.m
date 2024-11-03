@@ -155,10 +155,25 @@ szum80(szum80==0) = -1;
 
 [y41,y42,y43,k41,k42,k43,W41,W42,W43] = Hebb(bl41,10,wz41,wz42,wz43,wz44,wz45,wz46);
 
+k4(:,:,1) = k41;
+k4(:,:,2) = k42;
+k4(:,:,3) = k43;
+
+T4 = [sprintf("Dwa 2 wzorców");sprintf("Dla 4 wzorców");sprintf("Dla 6 wzorców")];
+
+wyrysujTekst(k4,T4);
+
 %%%%%%%%%%5 6x6 %%%%%%%%%%%%%%%%%%%55
 
 [y61,y62,y63,k61,k62,k63,W61,W62,W63] = Hcos(bl61,10,wz61,wz62,wz63,wz64,wz65,wz66);
 
+k6(:,:,1) = k61;
+k6(:,:,2) = k62;
+k6(:,:,3) = k63;
+
+T6 = [sprintf("Dwa 2 wzorców");sprintf("Dla 4 wzorców");sprintf("Dla 6 wzorców")];
+
+wyrysujTekst(k6,T6);
 
 %%%%%%%%% 28x28 %%%%%%%%%%%%%%%%
 
@@ -169,15 +184,41 @@ szum80(szum80==0) = -1;
 
 [~,~,yszum80,~,~,kszum80,~,~,Wszum80] = Hcos(szum80,200,wz281,wz282,wz283,wz284,wz285,wz286);
 
+k28(:,:,1) = kszum10;
+k28(:,:,2) = kszum40;
+k28(:,:,3) = kszum80;
+
+T28 = [sprintf("Dwa szumu 10%%");sprintf("Dla szumu 40%%");sprintf("Dla szumu 80%%")];
+
+wyrysujTekst(k28,T28);
+
+
 % Dla reguły pseudoinwersji
 
 %%%%%%%    4x4  %%%%%%%%%%%%%%%%%%%%%
 
 [ypi41,ypi42,ypi43,kpi41,kpi42,kpi43,Wpi41,Wpi42,Wpi43] = PPPP(bl41,10,wz41,wz42,wz43,wz44,wz45,wz46);
 
+kpi4(:,:,1) = kpi41;
+kpi4(:,:,2) = kpi42;
+kpi4(:,:,3) = kpi43;
+
+Tpi4 = [sprintf("Dwa 2 wzorców");sprintf("Dla 4 wzorców");sprintf("Dla 6 wzorców")];
+
+wyrysujTekst(kpi4,Tpi4);
+
 %%%%%%%%%%5 6x6 %%%%%%%%%%%%%%%%%%%55
 
 [ypi61,ypi62,ypi63,kpi61,kpi62,kpi63,Wpi61,Wpi62,Wpi63] = PPPP(bl61,10,wz61,wz62,wz63,wz64,wz65,wz66);
+
+kpi6(:,:,1) = kpi61;
+kpi6(:,:,2) = kpi62;
+kpi6(:,:,3) = kpi63;
+
+Tpi6 = [sprintf("Dwa 2 wzorców");sprintf("Dla 4 wzorców");sprintf("Dla 6 wzorców")];
+
+wyrysujTekst(kpi6,Tpi6);
+
 
 %%%%%%%%% 28x28 %%%%%%%%%%%%%%%%
 
@@ -187,3 +228,12 @@ szum80(szum80==0) = -1;
 [~,~,yszumPI40,~,~,kszumPI40,~,~,WszumPI40] = PPPP(szum40,100,wz281,wz282,wz283,wz284,wz285,wz286);
 
 [~,~,yszumPI80,~,~,kszumPI80,~,~,WszumPI80] = PPPP(szum80,200,wz281,wz282,wz283,wz284,wz285,wz286);
+
+kpi28(:,:,1) = kszum10;
+kpi28(:,:,2) = kszum40;
+kpi28(:,:,3) = kszum80;
+
+Tpi28 = [sprintf("Dwa szumu 10%%");sprintf("Dla szumu 40%%");sprintf("Dla szumu 80%%")];
+
+wyrysujTekst(kpi28,Tpi28);
+
