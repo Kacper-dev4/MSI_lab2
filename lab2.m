@@ -175,7 +175,7 @@ wyrysujTekst(k4,T4);
 [y61,y62,y63,k61,k62,k63,W61,W62,W63] = Hcos(bl61,10,wz61,wz62,wz63,wz64,wz65,wz66);
 
 k6(:,:,1) = k61;
-k6(:,:,2) = k62;
+k6(:,:,2) = k62;  
 k6(:,:,3) = k63;
 
 T6 = [sprintf("Dwa 2 wzorców");sprintf("Dla 4 wzorców");sprintf("Dla 6 wzorców")];
